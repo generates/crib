@@ -14,7 +14,7 @@
   "dependencies": {
     "@generates/whip": "^0.2.4",
     "@generates/whip-accounts": "^0.0.9",
-    "dotenv": "^14.1.0",
+    "dotenv": "^14.3.2",
     "stripe": "^8.195.0"
   },
   "devDependencies": {

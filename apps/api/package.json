@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "api",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "pretest": "prisma db seed",
+    "test": "bff"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@generates/whip": "^0.2.4",
+    "@generates/whip-accounts": "^0.0.9",
+    "dotenv": "^14.1.0",
+    "stripe": "^8.195.0"
+  },
+  "devDependencies": {
+    "prisma": "^3.7.0"
+  }
+}

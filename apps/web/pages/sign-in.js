@@ -1,0 +1,79 @@
+import React from 'react'
+import { useForm } from 'react-hook-form'
+import { styled, Alert, StyledEl } from '@generates/swag'
+import { SignInForm } from '@generates/swag-squad'
+
+const HeadingTwo = styled('h2')
+
+export default function SignInPage () {
+  const [isLoading, setIsLoading] = React.useState(false)
+  const [successMessage, setSuccessMessage] = React.useState()
+  const [data, setData] = React.useState()
+  const [feedback, setFeedback] = React.useState()
+  const form = useForm({ defaultValues: { rememberMe: true } })
+
+  function signIn (input) {
+    console.info('Input', input)
+    setSuccessMessage()
+    setFeedback({})
+    setIsLoading(true)
+    setData(input)
+    setTimeout(
+      () => {
+        if (input.email?.includes('.')) {
+          setSuccessMessage('You have successfully signed in!')
+        } else {
+          setFeedback({ email: 'Please enter a valid email address' })
+        }
+        setIsLoading(false)
+      },
+      3000
+    )
+  }
+
+  return (
+    <div>
+
+      <br />
+
+      <HeadingTwo css={{ fontSize: '1.25em', textAlign: 'center' }}>
+        Sign in
+      </HeadingTwo>
+
+      <br />
+
+      {successMessage && (
+        <Alert
+          level="success"
+          onClose={() => setSuccessMessage()}
+          css={{
+            width: '494px',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            marginBottom: '1.5em'
+          }}
+        >
+
+          <StyledEl css={{ fontWeight: '500' }}>
+            {successMessage}
+          </StyledEl>
+
+          <pre>
+            <code>
+              {JSON.stringify(data, undefined, 2)}
+            </code>
+          </pre>
+
+        </Alert>
+      )}
+
+      <SignInForm
+        form={form}
+        onSubmit={signIn}
+        isLoading={isLoading}
+        feedback={feedback}
+      />
+
+    </div>
+  )
+}

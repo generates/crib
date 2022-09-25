@@ -5971,10 +5971,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-tinybase@^1.0.5:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/tinybase/-/tinybase-1.2.0.tgz#04d190424dbd7c3ec7bc9d93de7d895f8fa5c818"
-  integrity sha512-kzoMvnMDtfG2QI3uFWi9PKriZcbLcWzZYRYWl81Z7WZZM4hgqdTkVMeqzEmSf/GKrou8vizDT6y1uh3PbO/ywA==
+tinybase@^1.3.6:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/tinybase/-/tinybase-1.3.6.tgz#63431d930b2b66e2dff13d934b52b8791b32cc7f"
+  integrity sha512-hISLJiRJMEY77kAzIGGEhgLqVNNNORqaObvMdcUNLlEdSYSnh9lmQeT5lq/TlBdaGiWI3ZU7G6RvBWl0ASFQ/A==
 
 tmp-promise@^3.0.2:
   version "3.0.3"

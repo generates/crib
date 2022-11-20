@@ -18,7 +18,7 @@
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.27.1",
     "react-icons": "^4.3.1",
-    "tinybase": "^1.0.5"
+    "tinybase": "^2.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",

@@ -10,7 +10,7 @@
   "dependencies": {
     "@generates/swag": "^1.1.0",
     "@generates/swag-squad": "^0.0.33",
-    "@headlessui/react": "^1.4.3",
+    "@headlessui/react": "^1.7.17",
     "@stitches/react": "^1.2.7",
     "clsx": "^1.1.1",
     "next": "^12.0.7",
